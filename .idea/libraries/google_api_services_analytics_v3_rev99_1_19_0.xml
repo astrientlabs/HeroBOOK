@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="google-api-services-analytics-v3-rev99-1.19.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-analytics/v3-rev99-1.19.0/1ff80eff60c8bcfb231a76a0ee5147ba3d49778c/google-api-services-analytics-v3-rev99-1.19.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-analytics/v3-rev99-1.19.0/f2fd8f9c80f1a8c28b2cd4e08f6c0dc360067148/google-api-services-analytics-v3-rev99-1.19.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

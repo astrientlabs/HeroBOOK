@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+    
+    <style name="animProgressBar">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@anim/progressanim</item>
+        <item name="android:progressDrawable">@anim/progressanim</item>
+        <item name="android:minWidth">28dip</item>
+        <item name="android:maxWidth">28dip</item>
+        <item name="android:minHeight">28dip</item>
+        <item name="android:maxHeight">28dip</item>
+    </style>
+
+    <style name="errortoasttext">
+        <item name="android:textSize">16.0dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style> 
+    
+    <style name="page_heroes">
+        <item name="android:background">@color/page_background</item>
+        <item name="android:paddingTop">@dimen/padding_large</item>
+        <item name="android:paddingLeft">@dimen/padding_large</item>
+        <item name="android:paddingRight">@dimen/padding_large</item>
+        <item name="android:paddingBottom">2dip</item>
+    </style>    
+    
+    
+    <style name="page">
+        <item name="android:background">@color/page_background</item>
+        <item name="android:padding">@dimen/padding_large</item>
+    </style>
+    
+    <style name="page_title">
+        <item name="android:textSize">16.0dp</item>
+        <item name="android:padding">@dimen/padding_large</item>
+        <item name="android:textColor">@color/page_text_title</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>     
+
+    <style name="page_list">
+        <item name="android:divider">@null</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:padding">@dimen/padding_large</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@null</item>
+    </style> 
+    
+    
+    <style name="side_row">
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+    
+    <style name="side_row_icon">
+        <item name="android:layout_marginRight">@dimen/padding_small</item>
+        <item name="android:background">@color/page_text_title</item>
+    </style>
+    
+    <style name="side_row_title">
+		<item name="android:textSize">14.0sp</item>
+		<item name="android:textColor">@color/page_text_title</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:lineSpacingExtra">5dip</item>	
+    </style>
+    
+    <style name="side_row_description">
+		<item name="android:textSize">10.0sp</item>
+		<item name="android:textColor">@color/page_text</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:typeface">sans</item>
+    </style>    
+
+    
+    <style name="bottom_grid">
+		<item name="android:columnWidth">51dip</item>
+		<item name="android:padding">0dip</item>
+		<item name="android:layout_margin">0dip</item>
+		<item name="android:verticalSpacing">0dip</item>
+		<item name="android:horizontalSpacing">0dip</item>
+		<item name="android:stretchMode">columnWidth</item>
+		<item name="android:listSelector">@null</item>
+		<item name="android:cacheColorHint">@null</item>
+		<item name="android:gravity">center</item>
+		<item name="android:scrollbars">none</item>
+    </style>    
+    
+    <style name="center_grid">
+        <item name="android:background">@color/page_background</item>
+		<item name="android:columnWidth">145dip</item>
+		<item name="android:padding">0dip</item>
+		<item name="android:layout_margin">0dip</item>
+		<item name="android:verticalSpacing">4dip</item>
+		<item name="android:horizontalSpacing">4dip</item>
+		<item name="android:stretchMode">columnWidth</item>
+		<item name="android:listSelector">@null</item>
+		<item name="android:cacheColorHint">@null</item>
+		<item name="android:gravity">center</item>
+		<item name="android:scrollbars">none</item>
+    </style> 
+    
+    <style name="youtube_title">    
+		<item name="android:textSize">8.0sp</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:layout_gravity">bottom|left</item>
+		<item name="android:paddingLeft">@dimen/padding_tiny</item>
+		<item name="android:paddingRight">@dimen/padding_tiny</item>		
+    </style>     
+    
+    
+    <style name="text_description">    
+		<item name="android:textSize">14.0sp</item>
+		<item name="android:textColor">@color/page_text</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:layout_gravity">top|left</item>
+		<item name="android:paddingLeft">@dimen/padding_huge</item>
+		<item name="android:paddingRight">@dimen/padding_huge</item>
+		<item name="android:paddingBottom">@dimen/padding_huge</item>
+		<item name="android:lineSpacingExtra">3dip</item>				
+    </style>      
+    
+    <style name="details_title">   
+        <item name="android:background">#CC0000</item>
+		<item name="android:textSize">18.0sp</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+		<item name="android:padding">@dimen/padding_small</item>		
+    </style>
+
+    
+    <style name="details_alias">   
+        <item name="android:background">#00CC0000</item>
+		<item name="android:textSize">18.0sp</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+		<item name="android:padding">@dimen/padding_small</item>		
+    </style>    
+    
+    <style name="page_footer">   
+        <item name="android:background">#111111</item>
+		<item name="android:textSize">11.0sp</item>
+		<item name="android:textColor">#cccccc</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+		<item name="android:padding">@dimen/padding_small</item>		
+    </style>    
+    
+
+    <style name="todayalbumtexttitle">    
+		<item name="android:textSize">13.0sp</item>
+		<item name="android:textColor">#ff666666</item>
+		<item name="android:paddingTop">10dip</item>
+		<item name="android:paddingLeft">0dip</item> 
+		<item name="android:textStyle">normal</item>
+		<item name="android:baselineAligned">true</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:layout_gravity">center_horizontal|bottom</item>					
+    </style>  	
+    
+    <style name="todayalbumtext">    
+		<item name="android:textSize">12.0sp</item>
+		<item name="android:textColor">#ff449b44</item>
+		<item name="android:paddingTop">2dip</item>
+		<item name="android:paddingLeft">0dip</item> 
+		<item name="android:textStyle">normal</item>
+		<item name="android:baselineAligned">true</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:layout_gravity">center_horizontal|bottom</item>					
+    </style>      
+    
+</resources>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <item
+            android:id="@+id/menu_item_fullscreen"
+            android:showAsAction="always"
+            android:title="@string/fullscreen"
+            android:icon="@drawable/ic_action_return_from_full_screen"/>      
+    
+   <!-- 
+   <item
+            android:id="@+id/menu_item_share"
+            android:showAsAction="always"
+            android:title="@string/info"
+            android:icon="@drawable/ic_action_about"/>     -->
+    
+   <item
+            android:id="@+id/menu_item_share"
+            android:showAsAction="always"
+            android:title="@string/share"
+            android:icon="@drawable/ic_action_share"/>
+
+</menu>

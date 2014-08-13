@@ -1,0 +1,19 @@
+<LinearLayout
+  android:id="@+id/layout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:background="@color/page_background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    	<com.brilliancemobility.heroes.util.AstrientViewPager
+		    android:id="@+id/viewpager"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_gravity="top"
+		    android:background="#777777"
+		/>
+    	   	
+	<include layout="@layout/incl_page_footer" android:layout_weight="1"></include>
+</LinearLayout>

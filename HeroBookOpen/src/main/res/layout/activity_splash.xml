@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff001e"
+    android:id="@+id/root"
+    android:gravity="center"
+    tools:context=".Splash"
+    android:orientation="vertical"
+    android:inAnimation="@anim/fadein"
+   	android:outAnimation="@anim/fadeout">
+
+
+	   	<ImageView 
+	    	android:src="@drawable/splash" 
+	    	android:id="@+id/splash"
+	    	android:scaleType="fitCenter"
+	    	android:layout_gravity="center"
+	    	android:layout_width="300dip"
+	    	android:layout_weight="1"
+	    	android:layout_height="0dip"	    	 
+	    	/>
+
+	<include layout="@layout/incl_page_footer"></include>
+	
+</LinearLayout>

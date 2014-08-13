@@ -1,0 +1,109 @@
+	
+<FrameLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+
+<LinearLayout
+  android:id="@+id/layout"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:gravity="center_horizontal" 
+  android:orientation="vertical"
+  android:background="@color/page_background"
+  >
+  
+	<LinearLayout
+	  android:background="@color/page_background"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical"
+	  android:paddingLeft="@dimen/padding_large"
+	  android:paddingRight="@dimen/padding_large"
+	  android:paddingBottom="0dip"
+	  android:paddingTop="@dimen/padding_large"
+	  >
+	    
+		<LinearLayout
+		  android:background="@drawable/search_background"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="horizontal"
+		  android:paddingLeft="@dimen/padding_large"
+		  android:paddingRight="@dimen/padding_large"
+		  android:paddingBottom="@dimen/padding_tiny"
+		  android:paddingTop="@dimen/padding_tiny"
+		  >
+	
+		    <AutoCompleteTextView 
+		    	android:background="@drawable/entry_background"
+		    	android:id="@+id/searchTermField" 
+		    	android:textColor="#FF555555"
+		    	android:textSize="18.0dip"
+		    	android:singleLine="true"
+		    	android:layout_width="0dip"
+		    	android:layout_height="32dip"
+		    	android:imeActionLabel="Go"
+		    	android:imeOptions="actionSearch"
+		    	android:layout_weight="1" 
+		    	android:layout_marginRight="4dip"
+		    	/>
+		    
+		    
+	    	<ImageView
+		    	android:id="@+id/searchbutton"
+	        	android:layout_width="wrap_content"
+	        	android:scaleType="fitCenter"
+	        	android:layout_height="32dip"
+	        	android:background="#00efefef"
+	        	android:layout_gravity="right"
+	        	android:src="@drawable/ic_action_search"/>	 
+ 	
+	  
+		</LinearLayout>
+	 
+	</LinearLayout>
+	
+	<android.support.v4.view.ViewPager  
+	    android:id="@+id/pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    tools:context=".MainActivity"/>
+	
+	  <fragment
+	      class="com.brilliancemobility.heroes.VideoListFragment"
+	      android:id="@+id/list_fragment"
+	      android:layout_width="match_parent"
+	      android:layout_gravity="bottom"
+	      android:layout_height="100dip"/>	   
+        	
+	<include layout="@layout/incl_page_footer"></include>
+	
+</LinearLayout>
+
+
+  
+  	  	<LinearLayout
+	      android:id="@+id/video_box"
+	      android:background="#222222"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_gravity="bottom|center_horizontal"
+	      android:layout_marginBottom="127dip"
+	      android:orientation="vertical">
+	
+		    <fragment
+	        class="com.brilliancemobility.heroes.VideoFragment"
+	        android:id="@+id/video_fragment_container"
+	        android:layout_gravity="center"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"/>
+	
+		    
+		</LinearLayout>	 
+		
+</FrameLayout>  	  	

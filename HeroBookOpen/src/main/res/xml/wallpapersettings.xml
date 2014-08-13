@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/settings"
+        android:key="wallpaper_settings"
+        xmlns:hostj2me="http://hostj2me.com"
+        >
+      
+
+        <ListPreference
+            	android:defaultValue="86400000"
+                android:key="refreshrate"
+                android:title="@string/title_refreshrate"
+                android:summary="@string/summary_refreshrate"
+                android:entries="@array/entries_refreshrate"
+                android:entryValues="@array/entryvalues_refreshrate"
+                android:dialogTitle="@string/dialog_title_refreshrate" />
+        
+        
+         <com.brilliancemobility.heroes.util.SeekBarPreference
+            	android:key="blur.radius"
+                android:title="@string/blur"
+                android:summary="@string/summary_blur"
+                android:defaultValue="0"
+                android:max="25"
+                hostj2me:min="0"
+            	hostj2me:unitsLeft=""
+                hostj2me:unitsRight=""
+            />       
+
+      
+</PreferenceScreen>

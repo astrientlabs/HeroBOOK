@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<item android:duration="0" android:drawable="@drawable/progress0"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress1"/>
+	<item android:duration="35" android:drawable="@drawable/progress2"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress3"/>
+	<item android:duration="35" android:drawable="@drawable/progress4"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress5"/>
+	<item android:duration="35" android:drawable="@drawable/progress6"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress7"/>
+	<item android:duration="35" android:drawable="@drawable/progress8"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress9"/>
+	<item android:duration="35" android:drawable="@drawable/progress10"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress11"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress12"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress13"/>
+	<item android:duration="35" android:drawable="@drawable/progress14"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress15"/>
+
+ 	
+ 	<item android:duration="35" android:drawable="@drawable/progress14"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress13"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress12"/>
+	<item android:duration="35" android:drawable="@drawable/progress11"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress10"/>
+	<item android:duration="35" android:drawable="@drawable/progress9"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress8"/>
+	<item android:duration="35" android:drawable="@drawable/progress7"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress6"/>
+	<item android:duration="35" android:drawable="@drawable/progress5"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress4"/>
+	<item android:duration="35" android:drawable="@drawable/progress3"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress2"/>
+	<item android:duration="35" android:drawable="@drawable/progress1"/>
+ 	<item android:duration="35" android:drawable="@drawable/progress0"/> 	
+ 
+</animation-list>

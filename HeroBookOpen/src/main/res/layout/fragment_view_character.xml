@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  android:id="@+id/layout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:background="@color/page_background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+	<LinearLayout
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal"
+	  android:background="#222222">
+
+	    
+	    <ImageView
+	        android:id="@+id/fullscreen"
+	        android:layout_width="60dip"
+	        android:layout_height="32dip"
+	        android:src="@drawable/ic_action_full_screen"
+	        android:layout_gravity="left|center_vertical"
+	        android:scaleType="fitCenter"
+	        /> 	    
+	    	  
+	    
+	    <TextView
+	        android:id="@+id/alias"
+			android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        style="@style/details_alias"
+	        android:layout_weight="1"
+			/>	 	    
+	    
+	    
+	    <ImageView
+	        android:id="@+id/share"
+	        android:layout_width="60dip"
+	        android:layout_height="32dip"
+	        android:src="@drawable/ic_action_share"
+	        android:layout_gravity="right|center_vertical"
+	        android:scaleType="fitCenter"
+	        /> 
+	    
+	    
+	    
+	</LinearLayout>    
+    
+    
+    <com.ortiz.touch.TouchImageView
+    	android:id="@+id/preview" 
+    	android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+	   	android:gravity="center"
+	   	android:background="#FF111111"
+	   	android:layout_weight="2"
+	   	android:scaleType="fitCenter"/>
+       
+
+	<LinearLayout
+	  android:id="@+id/details"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent"
+	  android:orientation="vertical"
+	  android:background="#ffffff"
+	  android:visibility="visible"
+	  android:layout_weight="2">       
+              
+       <ScrollView
+           android:id="@+id/scrollview"
+           android:layout_width="match_parent"
+           android:layout_height="0dip"
+           android:background="#FFFFFFFF"
+           android:scrollbarStyle="outsideOverlay"
+           android:scrollbars="none"
+           android:layout_weight="1"
+            >
+            
+           
+           
+           
+           
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="#FFFFFF"
+               >
+               
+             
+	        <TextView
+	        android:id="@+id/title"
+			android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        style="@style/details_title"
+			/>	    
+
+               
+               
+            <TextView
+	        android:id="@+id/description"
+			android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        style="@style/text_description"
+	        android:scrollbarSize="0dip"
+	        android:text="@string/empty_description"
+
+	        android:paddingTop="@dimen/padding_tiny"
+			/>
+               
+               
+           </LinearLayout>
+           
+           
+
+           
+       </ScrollView>
+
+ 		
+    <GridView
+        android:id="@+id/gallery"
+        style="@style/bottom_grid"
+        android:layout_width="match_parent"
+        android:layout_height="75dip"
+        android:stretchMode="columnWidth"
+        android:visibility="gone"
+        android:scrollbarSize="0dip"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="auto_fit"/> 		
+       
+	</LinearLayout>   
+	
+    
+</LinearLayout>    
