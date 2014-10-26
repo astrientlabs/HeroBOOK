@@ -5,7 +5,7 @@ HeroBOOK is an android application that uses the Marvel Comics API.
 
 Explore Marvel Comics characters; bookmark and share your favorites.
 
-https://play.google.com/store/apps/details?id=com.brilliancemobility.heroes&amp;hl=en
+http://www.amazon.com/gp/product/B00IRXY486
 
 Before running, edit the com.brilliancemobility.heroes.net.REST to include your API keys.
 
